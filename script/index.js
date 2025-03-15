@@ -57,16 +57,16 @@ const displayVideoDetails =(video)=>{
       const detailsContainer = document.getElementById('details-container')
       detailsContainer.innerHTML= `
         <div class="card bg-base-100 image-full  shadow-sm">
-  <figure>
-    <img
-      src="${video.thumbnail}"
-      alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">${video.title}</h2>
-    <p>${video.description}</p>
-  </div>
-</div>
+            <figure>
+               <img
+                  src="${video.thumbnail}"
+                  alt="Shoes" />
+            </figure>
+            <div class="card-body">
+               <h2 class="card-title">${video.title}</h2>
+               <p>${video.description}</p>
+            </div>
+         </div>
       `
 }
 
@@ -103,6 +103,7 @@ const displayvideos = (videos)=>{
       `
       return
    }
+   
    videos.forEach(video => {
    //  console.log(video)
     const videoCard = document.createElement('div')
